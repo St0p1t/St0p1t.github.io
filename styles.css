@@ -1,0 +1,462 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 650px;
+  background-color: #080808;
+}
+nav {
+  position: fixed;
+  width: 90%;
+  left: 5%;
+  height: 70px;
+  top: 0;
+  padding: 23px;
+  background-color: #1B1B1B;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 1000;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  gap: 10%;
+}
+.main_menu {
+  list-style: none;
+  display: flex;
+  gap: 100px;
+}
+.main_menu li a {
+  text-decoration: none;
+  color: #9C9C9C;
+  font-weight: 300;
+  font-size: 20px;
+}
+.links {
+  display: flex;
+  gap: 18px;
+}
+
+.header_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding-top: 130px;
+}
+.header_content_1 {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+.header_content_1_1 {
+  margin: 0;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+.header_content_1_1 h2 {
+  font-size: 55px;
+}
+.intro_text {
+  padding: 20px 0;
+  max-width: 500px;
+  letter-spacing: 4px;
+  color: #9C9C9C;
+}
+.btn {
+  display: inline-block;
+  padding: 28px 20px;
+  background: #3F8E00;
+  border: 1px solid #62BA1B;
+  box-shadow: 0px 8px 30px 0px #3F8E0080;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  width: 230px;
+  height: 80px;
+  text-align: center;
+}
+.monkey {
+  height: 380px;
+  width: 380px;
+}
+.worked_with {
+  padding-top: 80px;
+  letter-spacing: normal;
+  color: #FFF;
+  font-weight: 300;
+}
+.header_content_2 {
+  display: flex;
+  flex-direction: row;
+  gap: 45px;
+}
+
+.case_studies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 65px;
+}
+.case_studies h3 {
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+.case_studies .start_message {
+  max-width: 700px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #9C9C9C;
+}
+.case_studies_content {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+  padding-top: 100px;
+}
+.label1 {
+  border-radius: 60px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background: #FFF6E9;
+  color: #FFA217;
+  width: 75px;
+  height: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+.label2 {
+  border-radius: 60px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background: #D0E6FF;
+  color: #000AFF;
+  width: 75px;
+  height: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+.label3 {
+  border-radius: 60px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background: #E0FFF8;
+  color: #2AB090;
+  width: 77px;
+  height: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+.case_studies_content_1 {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+.case_studies_content_1 h2 {
+  padding-top: 20px;
+}
+.btn1 {
+  display: inline-block;
+  padding: 22px 20px;
+  background: #FFA217;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+}
+.btn2 {
+  display: inline-block;
+  padding: 22px 20px;
+  background: #000AFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+}
+.btn3 {
+  display: inline-block;
+  padding: 22px 20px;
+  background: #2AB090;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+}
+.div_image {
+  height: 300px;
+  width: 530px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.image {
+  height: 100%;
+  width: 100%;
+}
+
+.testimonials {
+  width: 100%;
+  height: 800px;
+  background-color: #080808;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 65px;
+}
+.testimonials h3 {
+  font-size: 50px;
+  padding-bottom: 10px;
+  color: #FFFFFF;
+}
+.testimonials .start_message {
+  max-width: 700px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #9C9C9C;
+}
+.testimonials .based_div {
+  width: 445px;
+  height: 212px;
+  top: 238px;  
+  left: 180px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  background: 
+    linear-gradient(#080808, #080808) padding-box,
+    linear-gradient(90deg, #484848 1.24%, rgba(27, 27, 27, 0) 100%) border-box;
+  background-clip: padding-box, border-box;
+  -webkit-background-clip: padding-box, border-box;
+}
+.testimonials h4 {
+  position: relative;
+  color: #FFFFFF;
+  font-size: 100px;
+  top: -36px;
+  right: 170px;
+}
+.testimonials .based_div p {
+  margin-top: -80px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 3px;
+  text-align: left;
+  padding: 0px 20px 20px 20px;
+  color: #9C9C9C;
+}
+.testimonials .based_div div {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding-left: 25px;
+  padding-top: 12px;
+}
+.testimonials .based_div div h1{
+  color: #FFFFFF;
+  padding-top: 12px;
+}
+.testimonials .main_div {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  padding-top: 50px;
+}
+.testimonials .main_div .sub_div {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.recent_work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 65px;
+}
+.recent_work h3 {
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+.recent_work .start_message {
+  max-width: 700px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #9C9C9C;
+}
+.recent_work_content {
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+  gap: 35px;
+  align-content: center;
+}
+.main_recent_work_content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.main_recent_work_content .div_image {
+  height: 300px;
+  width: 445px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.recent_work_content .image{
+  height: 100%;
+  width: 100%;
+}
+.main_recent_work_content h2 {
+  padding-top: 30px;
+}
+.main_recent_work_content .intro_text {
+  max-width: 420px;
+}
+.btn4 {
+  display: inline-block;
+  padding: 22px 20px;
+  background: #3F8E00;
+  border: 1px solid #62BA1B;
+  box-shadow: 0px 8px 30px 0px #3F8E004D;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+}
+.left_right_btn {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+
+.get_in_touch {
+  width: 100%;
+  height: 680px;
+  background-color: #080808;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 65px;
+}
+.get_in_touch h3 {
+  font-size: 50px;
+  padding-bottom: 10px;
+  color: #FFFFFF;
+}
+.get_in_touch .start_message {
+  max-width: 700px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #9C9C9C;
+}
+.get_in_touch_content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  gap: 25px;
+  align-content: center;
+  text-align: left;
+}
+.form-group {
+  min-width: 350px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #FFFFFF;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.btn5 {
+  display: inline-block;
+  padding: 22px 20px;
+  background: #3F8E00;
+  border: 1px solid #62BA1B;
+  box-shadow: 0px 8px 30px 0px #3F8E004D;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  height: 60px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;  
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
