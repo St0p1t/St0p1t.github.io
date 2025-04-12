@@ -10,11 +10,11 @@
     <nav>
       <div class="nav-container">
         <ul class="main_menu">
-          <li><a href="">Home</a></li>
-          <li><a href="">Case Studies</a></li>
-          <li><a href="">Testimonials</a></li>
-          <li><a href="">Recent work</a></li>
-          <li><a href="">Get In Touch</a></li>
+          <li><a href="#header_content">Home</a></li>
+          <li><a href="#case_studies">Case Studies</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#recent_work">Recent work</a></li>
+          <li><a href="#get_in_touch">Get In Touch</a></li>
         </ul>
         <div class="links">
           <div>
@@ -29,7 +29,7 @@
         </div>
       </div>
     </nav>
-    <section class="header_content">
+    <section class="header_content" id="header_content">
       <div class="header_content_1">
         <div class="header_content_1_1">
           <h2>Chupapi</h2>
@@ -49,7 +49,7 @@
     </section>
   </header>
   <main>
-    <section>
+    <section id="case_studies">
       <div class="case_studies">
         <h3>Case Studies</h3>
         <p class="start_message">Solving user and business problems since last 15+ years. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -88,7 +88,7 @@
         </div>
       </div>
     </section>
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
       <h3>Testimonials</h3>
       <p class="start_message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
       <div class="main_div">
@@ -130,7 +130,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="recent_work">
       <div class="recent_work">
         <h3>Recent Work</h3>
         <p class="start_message">Solving user and business problems since last 15+ years. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -160,24 +160,26 @@
         </div>
       </div>
     </section>
-    <section class="get_in_touch">
+    <section class="get_in_touch" id="get_in_touch">
       <h3>Get In Touch</h3>
       <p class="start_message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-      <div class="get_in_touch_content">
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Please enter your email" required>
+      <form action="/contact" method="POST">
+        <div class="get_in_touch_content">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Please enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Mobile</label>
+            <input type="tel" name="phone" id="phone" placeholder="Enter mobile" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="5" placeholder="Enter your message" required></textarea>
+          </div>
+          <button type="submit" class="btn5">Submit &gt;</button>
         </div>
-        <div class="form-group">
-          <label for="phone">Mobile</label>
-          <input type="number" name="phone" id="phone" placeholder="Enter mobile" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea name="message" id="message" rows="5" placeholder="Enter your message" required></textarea>
-        </div>
-        <a href="#" class="btn5">Submit &gt;</a>
-      </div>
+      </form>
     </section>
   </main>
   <footer>
