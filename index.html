@@ -7,14 +7,14 @@
 </head>
 <body>
   <header>
-    <nav>
+    <nav id="nav">
       <div class="nav-container">
         <ul class="main_menu">
           <li><a href="#header_content">Home</a></li>
           <li><a href="#case_studies">Case Studies</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#recent_work">Recent work</a></li>
-          <li><a href="#get_in_touch">Get In Touch</a></li>
+          <li><button id="get_in_touch_button" class="get_in_touch_button">Get In Touch</button></li>
         </ul>
         <div class="links">
           <div>
@@ -160,30 +160,91 @@
         </div>
       </div>
     </section>
-    <section class="get_in_touch" id="get_in_touch">
-      <h3>Get In Touch</h3>
-      <p class="start_message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-      <form action="/contact" method="POST">
-        <div class="get_in_touch_content">
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Please enter your email" required>
-          </div>
-          <div class="form-group">
-            <label for="phone">Mobile</label>
-            <input type="tel" name="phone" id="phone" placeholder="Enter mobile" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea name="message" id="message" rows="5" placeholder="Enter your message" required></textarea>
-          </div>
-          <button type="submit" class="btn5">Submit &gt;</button>
+    <section id="gallery" class="gallery">
+      <h3>Check out the Legends</h3>
+      <p class="start_message">Sleva napravo: Monkeych Munick - Mumopsik Monkacki - Bul' Bul' Ponchick Monkeyvish. </p>
+      <div class="gallery-div">
+        <div class="thumb" data-index="0">
+          <img src="images/gallery_monkey1.webp" alt="-_-">
         </div>
-      </form>
+        <div class="thumb" data-index="1">
+          <img src="images/gallery_monkey2.webp" alt="-_-">
+        </div>
+        <div class="thumb" data-index="2">
+          <img src="images/gallery_monkey3.webp" alt="-_-">
+        </div>
+      </div>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="arrow left-arrow">&#10094;</span>
+          <img id="modal-img" src="/images/gallery_monkey1.webp" alt="">
+          <span class="arrow right-arrow">&#10095;</span>
+        </div>
+      </div>
+    </section>
+    <div id="contact-modal" class="contact-modal">
+      <div class="modal-dialog">
+        <h3>Get In Touch</h3>
+        <p class="start_message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+        <form id="contact-form" action="/contact" method="POST">
+          <div class="get_in_touch_content">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input name="email" id="email" placeholder="Please enter your email">
+            </div>
+            <div class="form-group">
+              <label for="phone">Mobile</label>
+              <input name="phone" id="phone" placeholder="Enter mobile">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" rows="5" placeholder="Enter your message"></textarea>
+            </div>
+            <div id="form-error" style="color:red; margin-bottom:10px;"></div>
+            <button type="submit" class="btn5">Submit &gt;</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span id="popup-btn" class="popup-btn">&times;</span>
+        <h3>Лингангулигули</h3>
+      </div>
+    </div>
+    <section class="timer-section">
+      <h3>Time befor the apocalypse</h3>
+      <div id="timer">
+        <div class="time-segment">
+          <span id="days" class="time-int">--</span>
+          <span class="label">days</span>
+        </div>
+        <span class="defis">-</span>
+        <div class="time-segment">
+          <span id="hours" class="time-int">--</span>
+          <span class="label">hours</span>
+        </div>
+        <span class="defis">-</span>
+        <div class="time-segment">
+          <span id="minutes" class="time-int">--</span>
+          <span class="label">mins</span>
+        </div>
+        <span class="defis">-</span>
+        <div class="time-segment">
+          <span id="seconds" class="time-int">--</span>
+          <span class="label">secs</span>
+        </div>
+      </div>
     </section>
   </main>
   <footer>
     <p>Made with ❤️</p>
   </footer>
+<script src="scripts/gallery.js"></script>
+<script src="scripts/contact.js"></script>
+<script src="scripts/contact_post.js"></script>
+<script src="scripts/insane_popup.js"></script>
+<script src="scripts/timer.js"></script>
+<script src="scripts/fix_nav.js"></script>
 </body>
 </html>
