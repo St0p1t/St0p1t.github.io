@@ -11,7 +11,7 @@ function openModal(index) {
   currentIndex = index;
   modalImg.src = images[currentIndex];
   modal.style.display = 'block';
-  updateArrows();
+  // updateArrows();
 }
 
 function updateArrows() {
@@ -30,8 +30,10 @@ modal.addEventListener('click', e => {
 leftArrow.addEventListener('click', e => {
   e.stopPropagation();
   if (currentIndex > 0) openModal(currentIndex - 1);
+  else if (currentIndex == 0) openModal(currentIndex = images.length - 1);
 });
 rightArrow.addEventListener('click', e => {
   e.stopPropagation();
   if (currentIndex < images.length - 1) openModal(currentIndex + 1);
+  else if (currentIndex == images.length - 1) openModal(currentIndex = 0);
 });
