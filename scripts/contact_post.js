@@ -21,8 +21,16 @@ form.addEventListener('submit', async function (e) {
   const russianTextRegex = /^[А-Яа-яЁё\s.,!?"'()-]+$/;
   const isNotNoneRegex = /^\s*$/;
 
+  if (isNotNoneRegex.test(email)) {
+    errorDisplay.textContent = 'Введите email.';
+    return;
+  }
   if (!emailRegex.test(email)) {
     errorDisplay.textContent = 'Неверный email формат.';
+    return;
+  }
+  if (isNotNoneRegex.test(phone)) {
+    errorDisplay.textContent = 'Введите номер телефона.';
     return;
   }
   if (!phoneRegex.test(phone)) {

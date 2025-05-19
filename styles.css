@@ -1191,6 +1191,27 @@ nav.fixed {
   color: white;
 }
 
+svg {
+  width: 150px;
+  height: 150px;
+}
+.triangle {
+  fill: #db4d56;
+  stroke: #ec4094;
+  transform-origin: 50% 50%;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.triangle:hover {
+  animation: rotate 0.2s linear infinite;
+}
+
 .timer-section {
   align-items: center;
   text-align: center;
